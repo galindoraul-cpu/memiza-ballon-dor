@@ -266,9 +266,9 @@ const winnerPhotos = {
     "PADILLA": "images/padilla.jpg",
     "JUAN": "images/juan.jpg",
     "TASUKO": "images/tasuko.jpg",
-    "ROBI": "images/robi.jpg"
-   "KIRBY": "images/kirby.jpg
-   "PASOS": "images/pasos.jpg 
+    "ROBI": "images/robi.jpg",
+   "KIRBY": "images/kirby.jpg",
+   "PASOS": "images/pasos.jpg",
    
 };
 
