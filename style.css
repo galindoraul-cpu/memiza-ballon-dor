@@ -1340,3 +1340,433 @@ button:disabled:hover {
     }
 
 }
+
+/* =========================================
+   12. AJUSTES PARA PROYECCIÓN — MEMIZA AWARDS
+========================================= */
+
+
+/* -----------------------------------------
+   PORTADA — TEXTOS MÁS GRANDES
+----------------------------------------- */
+
+.brand {
+    font-size: 18px;
+}
+
+.edition {
+    font-size: 13px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+.title-memiza {
+    font-size: clamp(52px, 8vw, 90px);
+}
+
+.title-ballon {
+    font-size: clamp(34px, 6vw, 60px);
+    letter-spacing: 7px;
+}
+
+.home-description {
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 1.7;
+}
+
+.gold-button {
+    font-size: 13px;
+    padding: 20px 32px;
+}
+
+.home-footer {
+    font-size: 12px;
+}
+
+
+/* -----------------------------------------
+   PRESENTADOR — TEXTOS MÁS GRANDES
+----------------------------------------- */
+
+.text-button {
+    font-size: 13px;
+}
+
+.presenter-brand {
+    font-size: 15px;
+}
+
+.live-indicator {
+    font-size: 12px;
+}
+
+.category-heading .eyebrow {
+    font-size: 13px;
+}
+
+.category-heading h2 {
+    font-size: clamp(34px, 4.5vw, 56px);
+}
+
+.category-heading > p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.category-counter {
+    font-size: 13px;
+}
+
+
+/* -----------------------------------------
+   NOMINADOS
+----------------------------------------- */
+
+.nominee-card {
+    padding: 30px 22px 32px;
+}
+
+.nominee-number {
+    font-size: 14px;
+}
+
+.nominee-avatar {
+    width: 130px;
+    height: 130px;
+    font-size: 40px;
+}
+
+.nominee-name {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+}
+
+.nominee-description {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.nominee-vote-btn {
+    font-size: 12px;
+    padding: 15px 10px;
+}
+
+
+/* -----------------------------------------
+   CONTROLES DEL PRESENTADOR
+----------------------------------------- */
+
+.outline-button {
+    font-size: 12px;
+    padding: 17px 24px;
+}
+
+.voting-status {
+    font-size: 12px;
+}
+
+.presenter-controls .gold-button {
+    font-size: 12px;
+}
+
+
+/* -----------------------------------------
+   PANTALLA DORADA — AJUSTES DE ESPACIO
+----------------------------------------- */
+
+.winner-header {
+    font-size: 13px;
+}
+
+.winner-content {
+    padding: 25px 20px;
+}
+
+.winner-eyebrow {
+    font-size: 17px;
+}
+
+
+/* -----------------------------------------
+   FOTO DEL GANADOR
+----------------------------------------- */
+
+.winner-photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: clamp(130px, 16vw, 180px);
+    height: clamp(130px, 16vw, 180px);
+
+    margin: 0 0 20px;
+
+    padding: 5px;
+
+    border: 3px solid #6F5010;
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #FFF1B0,
+            #D6B65C,
+            #967322
+        );
+
+    box-shadow:
+        0 0 25px rgba(255, 248, 210, 0.45),
+        0 8px 25px rgba(30, 20, 5, 0.2);
+
+    overflow: hidden;
+}
+
+.winner-photo {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* -----------------------------------------
+   TROFEO Y NOMBRE DEL GANADOR
+----------------------------------------- */
+
+.winner-trophy {
+    width: 75px;
+    height: 75px;
+
+    margin: 15px 0 20px;
+}
+
+.winner-trophy span {
+    font-size: 42px;
+}
+
+#winnerName {
+    font-size: clamp(45px, 7vw, 85px);
+    letter-spacing: 4px;
+}
+
+#winnerCategory {
+    margin-top: 15px;
+
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.winner-divider {
+    margin: 22px 0;
+}
+
+
+/* -----------------------------------------
+   ESTADÍSTICAS DEL GANADOR
+----------------------------------------- */
+
+.winner-stats {
+    gap: 55px;
+    margin-bottom: 25px;
+}
+
+.stat-label {
+    font-size: 12px;
+}
+
+.stat-number {
+    font-size: 38px;
+}
+
+.dark-button {
+    font-size: 13px;
+    padding: 20px 32px;
+}
+
+.winner-footer {
+    font-size: 12px;
+}
+
+
+/* =========================================
+   13. AJUSTES PARA CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* PORTADA */
+
+    .brand {
+        font-size: 13px;
+    }
+
+    .edition {
+        font-size: 10px;
+    }
+
+    .eyebrow {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .title-memiza {
+        font-size: 42px;
+    }
+
+    .title-ballon {
+        font-size: 29px;
+        letter-spacing: 3px;
+    }
+
+    .home-description {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .gold-button {
+        font-size: 10px;
+        padding: 16px 20px;
+    }
+
+    .home-footer {
+        font-size: 9px;
+    }
+
+
+    /* PRESENTADOR */
+
+    .text-button {
+        font-size: 10px;
+    }
+
+    .live-indicator {
+        font-size: 9px;
+    }
+
+    .category-heading .eyebrow {
+        font-size: 10px;
+    }
+
+    .category-heading h2 {
+        font-size: 29px;
+    }
+
+    .category-heading > p:not(.eyebrow) {
+        font-size: 13px;
+    }
+
+    .category-counter {
+        font-size: 10px;
+    }
+
+    .nominee-card {
+        padding: 18px 12px 20px;
+    }
+
+    .nominee-number {
+        font-size: 11px;
+    }
+
+    .nominee-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 27px;
+    }
+
+    .nominee-name {
+        font-size: 13px;
+    }
+
+    .nominee-description {
+        font-size: 10px;
+    }
+
+    .nominee-vote-btn {
+        font-size: 9px;
+        padding: 11px 5px;
+    }
+
+    .outline-button {
+        font-size: 10px;
+    }
+
+    .voting-status {
+        font-size: 9px;
+    }
+
+
+    /* GANADOR */
+
+    .winner-header {
+        font-size: 9px;
+    }
+
+    .winner-content {
+        padding: 20px 12px;
+    }
+
+    .winner-eyebrow {
+        font-size: 11px;
+    }
+
+    .winner-trophy {
+        width: 55px;
+        height: 55px;
+        margin: 10px 0 15px;
+    }
+
+    .winner-trophy span {
+        font-size: 30px;
+    }
+
+    .winner-photo-container {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 15px;
+    }
+
+    #winnerName {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    #winnerCategory {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .winner-divider {
+        margin: 18px 0;
+    }
+
+    .winner-stats {
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .stat-label {
+        font-size: 9px;
+    }
+
+    .stat-number {
+        font-size: 27px;
+    }
+
+    .dark-button {
+        font-size: 10px;
+        padding: 15px 20px;
+    }
+
+    .winner-footer {
+        font-size: 9px;
+    }
+
+}
