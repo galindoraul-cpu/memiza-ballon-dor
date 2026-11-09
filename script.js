@@ -97,7 +97,7 @@ const categories = [
 
         nominees: [
             {
-                name: "ROBBI",
+                name: "ROBI",
                 initials: "RO",
                 description: "Una historia por cada ocasión",
                 votes: 7
@@ -175,7 +175,7 @@ const categories = [
                 votes: 10
             },
             {
-                name: "ROBBI",
+                name: "ROBI",
                 initials: "RO",
                 description: "Siempre aparece en momentos clave",
                 votes: 7
@@ -223,7 +223,7 @@ const categories = [
                 votes: 7
             },
             {
-                name: "ROBBI",
+                name: "ROBI",
                 initials: "RO",
                 description: "El legado continúa",
                 votes: 4
@@ -253,7 +253,24 @@ let selectedNomineeIndex = null;
 // Resultados de las categorías.
 
 const categoryResults = {};
+/* =========================================
+   MAPA DE FOTOGRAFÍAS DE LOS AMIGOS
+========================================= */
 
+const winnerPhotos = {
+    "MEMO": "images/memo.jpg",
+    "BRINGAS": "images/bringas.jpg",
+    "GAS": "images/gas.jpg",
+    "RULO": "images/rulo.jpg",
+    "PIQUÉ": "images/pique.jpg",
+    "PADILLA": "images/padilla.jpg",
+    "JUAN": "images/juan.jpg",
+    "TASUKO": "images/tasuko.jpg",
+    "ROBI": "images/robi.jpg"
+   "KIRBY": "images/kirby.jpg
+   "PASOS": "images/pasos.jpg 
+   
+};
 
 /* =========================================
    3. ELEMENTOS HTML
@@ -303,6 +320,12 @@ const votingStatus =
 
 const winnerName =
     document.getElementById("winnerName");
+
+const winnerPhoto =
+    document.getElementById("winnerPhoto");
+
+const winnerPhotoContainer =
+    document.querySelector(".winner-photo-container");
 
 const winnerCategory =
     document.getElementById("winnerCategory");
@@ -517,16 +540,39 @@ function revealWinner() {
         category: category.title
     };
 
-    // Actualizamos la pantalla dorada.
+  // Actualizamos la pantalla dorada.
 
-    winnerName.textContent =
-        winner.name;
+winnerName.textContent =
+    winner.name;
 
-    winnerCategory.textContent =
-        category.title;
+winnerCategory.textContent =
+    category.title;
 
-    winnerVotes.textContent =
-        winner.votes;
+winnerVotes.textContent =
+    winner.votes;
+
+
+// -----------------------------------------
+// ACTUALIZAR FOTOGRAFÍA DEL GANADOR
+// -----------------------------------------
+
+const photoPath =
+    winnerPhotos[winner.name];
+
+if (photoPath) {
+
+    winnerPhotoContainer.style.display = "flex";
+
+    winnerPhoto.src = photoPath;
+
+    winnerPhoto.alt =
+        `Fotografía de ${winner.name}`;
+
+} else {
+
+    winnerPhotoContainer.style.display = "none";
+
+}
 
     const totalVotes =
         category.nominees.reduce(
@@ -695,7 +741,15 @@ nextCategoryBtn.addEventListener(
     nextCategory
 );
 
+/* =========================================
+   RESPALDO SI NO EXISTE UNA FOTOGRAFÍA
+========================================= */
 
+winnerPhoto.addEventListener("error", () => {
+
+    winnerPhotoContainer.style.display = "none";
+
+});
 /* =========================================
    15. INICIALIZAR APLICACIÓN
 ========================================= */
