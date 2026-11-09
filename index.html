@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MEMIZA BALLON D'OR | The Night of Legends</title>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ======================================
+         PANTALLA PRINCIPAL
+    ======================================= -->
+
+    <main id="app">
+
+        <!-- PORTADA -->
+
+        <section id="homeScreen" class="screen home-screen active">
+
+            <div class="home-background"></div>
+
+            <header class="top-bar">
+
+                <div class="brand">
+                    <span class="brand-icon">✦</span>
+                    MEMIZA
+                </div>
+
+                <div class="edition">
+                    EDITION 2026
+                </div>
+
+            </header>
+
+            <div class="home-content">
+
+                <p class="eyebrow">
+                    THE FRIENDS FOOTBALL AWARDS
+                </p>
+
+                <div class="trophy-container">
+                    <div class="trophy-glow"></div>
+
+                    <div class="trophy">
+                        <svg viewBox="0 0 200 250"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="trophy-svg">
+
+                            <defs>
+                                <linearGradient id="goldGradient"
+                                    x1="0%" y1="0%"
+                                    x2="100%" y2="100%">
+
+                                    <stop offset="0%" stop-color="#FFF1B0"/>
+                                    <stop offset="25%" stop-color="#D6B65C"/>
+                                    <stop offset="50%" stop-color="#FFF0A0"/>
+                                    <stop offset="75%" stop-color="#A98128"/>
+                                    <stop offset="100%" stop-color="#F1D67C"/>
+
+                                </linearGradient>
+                            </defs>
+
+                            <path
+                                d="M48 24 H152 V65
+                                   C152 112 132 145 100 155
+                                   C68 145 48 112 48 65 Z"
+                                fill="url(#goldGradient)"
+                                stroke="#F5DE91"
+                                stroke-width="2"/>
+
+                            <path
+                                d="M48 45 H18
+                                   C18 92 39 112 68 117"
+                                fill="none"
+                                stroke="url(#goldGradient)"
+                                stroke-width="12"/>
+
+                            <path
+                                d="M152 45 H182
+                                   C182 92 161 112 132 117"
+                                fill="none"
+                                stroke="url(#goldGradient)"
+                                stroke-width="12"/>
+
+                            <path
+                                d="M100 155 V188"
+                                stroke="url(#goldGradient)"
+                                stroke-width="16"/>
+
+                            <path
+                                d="M65 188 H135 V207 H65 Z"
+                                fill="url(#goldGradient)"/>
+
+                            <path
+                                d="M48 207 H152 V226 H48 Z"
+                                fill="url(#goldGradient)"/>
+
+                            <circle
+                                cx="100"
+                                cy="82"
+                                r="28"
+                                fill="#17120A"
+                                stroke="#E4C56A"
+                                stroke-width="2"/>
+
+                            <text
+                                x="100"
+                                y="91"
+                                text-anchor="middle"
+                                font-size="27"
+                                font-family="Cinzel"
+                                font-weight="700"
+                                fill="#E4C56A">
+                                M
+                            </text>
+
+                        </svg>
+                    </div>
+                </div>
+
+                <h1 class="main-title">
+
+                    <span class="title-memiza">
+                        MEMIZA
+                    </span>
+
+                    <span class="title-ballon">
+                        BALLON D'OR
+                    </span>
+
+                </h1>
+
+                <div class="title-divider"></div>
+
+                <p class="home-description">
+                    A NIGHT TO CELEBRATE
+                    <span>THE LEGENDS OF THE GROUP</span>
+                </p>
+
+                <button
+                    id="startCeremonyBtn"
+                    class="gold-button">
+
+                    <span>COMENZAR CEREMONIA</span>
+
+                    <span class="button-arrow">→</span>
+
+                </button>
+
+            </div>
+
+            <footer class="home-footer">
+
+                <span>EST. 2026</span>
+
+                <span>THE NIGHT OF LEGENDS</span>
+
+                <span>UNFORGETTABLE MOMENTS</span>
+
+            </footer>
+
+        </section>
+
+
+        <!-- ======================================
+             PANEL DEL PRESENTADOR
+        ======================================= -->
+
+        <section id="presenterScreen" class="screen presenter-screen">
+
+            <header class="presenter-header">
+
+                <button
+                    id="homeBtn"
+                    class="text-button">
+
+                    ← VOLVER AL INICIO
+
+                </button>
+
+                <div class="presenter-brand">
+
+                    <span>MEMIZA</span>
+
+                    <span class="brand-divider">/</span>
+
+                    <span>BALLON D'OR</span>
+
+                </div>
+
+                <div class="live-indicator">
+
+                    <span class="live-dot"></span>
+
+                    GALA 2026
+
+                </div>
+
+            </header>
+
+
+            <div class="presenter-layout">
+
+                <!-- INFORMACIÓN DE LA CATEGORÍA -->
+
+                <div class="category-heading">
+
+                    <p class="eyebrow">
+                        THE AWARDS
+                    </p>
+
+                    <h2 id="categoryTitle">
+                        EL MÁS FANTASMA
+                    </h2>
+
+                    <p id="categoryDescription">
+                        Ese amigo que siempre promete
+                        y nunca aparece.
+                    </p>
+
+                    <div class="category-counter">
+
+                        <span id="categoryCounter">
+                            CATEGORÍA 01
+                        </span>
+
+                        <span class="counter-divider">/</span>
+
+                        <span id="totalCategories">
+                            06
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NOMINADOS -->
+
+                <div id="nomineesContainer" class="nominees-grid">
+
+                    <!-- Los nominados se generarán con JavaScript -->
+
+                </div>
+
+
+                <!-- CONTROLES -->
+
+                <div class="presenter-controls">
+
+                    <button
+                        id="previousCategoryBtn"
+                        class="outline-button">
+
+                        ← ANTERIOR
+
+                    </button>
+
+                    <div class="voting-status">
+
+                        <span class="status-dot"></span>
+
+                        <span id="votingStatus">
+                            VOTACIÓN DE DEMOSTRACIÓN
+                        </span>
+
+                    </div>
+
+                    <button
+                        id="revealWinnerBtn"
+                        class="gold-button">
+
+                        REVELAR GANADOR →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             PANTALLA DEL GANADOR
+        ======================================= -->
+
+        <section id="winnerScreen" class="screen winner-screen">
+
+            <div class="winner-background"></div>
+
+            <header class="winner-header">
+
+                <span>MEMIZA BALLON D'OR</span>
+
+                <span>THE WINNER</span>
+
+            </header>
+
+            <div class="winner-content">
+
+                <p class="winner-eyebrow">
+                    AND THE WINNER IS...
+                </p>
+
+                <div class="winner-trophy">
+
+                    <span>✦</span>
+
+                </div>
+
+                <h2 id="winnerName">
+                    MEMO
+                </h2>
+
+                <p id="winnerCategory">
+                    EL MÁS FANTASMA
+                </p>
+
+                <div class="winner-divider"></div>
+
+                <div class="winner-stats">
+
+                    <div class="winner-stat">
+
+                        <span class="stat-label">
+                            VOTOS
+                        </span>
+
+                        <span id="winnerVotes" class="stat-number">
+                            0
+                        </span>
+
+                    </div>
+
+                    <div class="stat-separator"></div>
+
+                    <div class="winner-stat">
+
+                        <span class="stat-label">
+                            PORCENTAJE
+                        </span>
+
+                        <span id="winnerPercentage" class="stat-number">
+                            0%
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    id="nextCategoryBtn"
+                    class="dark-button">
+
+                    SIGUIENTE CATEGORÍA →
+
+                </button>
+
+            </div>
+
+            <footer class="winner-footer">
+
+                THE NIGHT OF LEGENDS
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
