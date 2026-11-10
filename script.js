@@ -5,13 +5,97 @@
 ========================================= */
 
 
+
 /* =========================================
-   1. DATOS DE DEMOSTRACIÓN
+   1. DATOS DE LA GALA
 ========================================= */
 
-// Estos datos son ficticios.
-// Después podremos reemplazarlos por la información real
-// de tus amigos, categorías y nominados.
+// -----------------------------------------
+// PARTICIPANTES
+// Cada amigo se registra una sola vez.
+// -----------------------------------------
+
+const participants = {
+
+    memo: {
+        name: "MEMO",
+        initials: "ME",
+        photo: "images/memo.jpg"
+    },
+
+    bringas: {
+        name: "BRINGAS",
+        initials: "BR",
+        photo: "images/bringas.jpg"
+    },
+
+    gas: {
+        name: "GAS",
+        initials: "GA",
+        photo: "images/gas.jpg"
+    },
+
+    rulo: {
+        name: "RULO",
+        initials: "RU",
+        photo: "images/rulo.jpg"
+    },
+
+    pique: {
+        name: "PIQUÉ",
+        initials: "PI",
+        photo: "images/pique.jpg"
+    },
+
+    padilla: {
+        name: "PADILLA",
+        initials: "PA",
+        photo: "images/padilla.jpg"
+    },
+
+    urias: {
+        name: "URÍAS",
+        initials: "UR",
+        photo: "images/urias.jpg"
+    },
+
+    tasuko: {
+        name: "TASUKO",
+        initials: "TA",
+        photo: "images/tasuko.jpg"
+    },
+
+    robi: {
+        name: "ROBI",
+        initials: "RO",
+        photo: "images/robi.jpg"
+    },
+
+    juan: {
+        name: "JUAN",
+        initials: "JU",
+        photo: "images/juan.jpg"
+    },
+
+    kirby: {
+        name: "KIRBY",
+        initials: "KI",
+        photo: "images/kirby.jpg"
+    },
+
+    pasos: {
+        name: "PASOS",
+        initials: "PA",
+        photo: "images/pasos.jpg"
+    }
+
+};
+
+
+// -----------------------------------------
+// CATEGORÍAS
+// Cada nominado hace referencia a un participante.
+// -----------------------------------------
 
 const categories = [
 
@@ -25,26 +109,22 @@ const categories = [
 
         nominees: [
             {
-                name: "MEMO",
-                initials: "ME",
+                participantId: "memo",
                 description: "El desaparecido profesional",
                 votes: 8
             },
             {
-                name: "BRINGAS",
-                initials: "BR",
+                participantId: "bringas",
                 description: "Siempre tiene una excusa",
                 votes: 5
             },
             {
-                name: "GAS",
-                initials: "GA",
+                participantId: "gas",
                 description: "Nunca se sabe dónde está",
                 votes: 3
             },
             {
-                name: "RULO",
-                initials: "RU",
+                participantId: "rulo",
                 description: "Aparece cuando menos lo esperas",
                 votes: 6
             }
@@ -61,26 +141,22 @@ const categories = [
 
         nominees: [
             {
-                name: "PIQUÉ",
-                initials: "PI",
+                participantId: "pique",
                 description: "Un espectáculo diferente",
                 votes: 4
             },
             {
-                name: "PADILLA",
-                initials: "PA",
+                participantId: "padilla",
                 description: "El balón y él no se entienden",
                 votes: 9
             },
             {
-                name: "URÍAS",
-                initials: "UR",
+                participantId: "urias",
                 description: "La técnica es opcional",
                 votes: 5
             },
             {
-                name: "TASUKO",
-                initials: "TA",
+                participantId: "tasuko",
                 description: "El arte de perder el balón",
                 votes: 7
             }
@@ -97,26 +173,22 @@ const categories = [
 
         nominees: [
             {
-                name: "ROBI",
-                initials: "RO",
+                participantId: "robi",
                 description: "Una historia por cada ocasión",
                 votes: 7
             },
             {
-                name: "BRINGAS",
-                initials: "BR",
+                participantId: "bringas",
                 description: "La realidad es negociable",
                 votes: 4
             },
             {
-                name: "GAS",
-                initials: "GA",
+                participantId: "gas",
                 description: "El protagonista de todo",
                 votes: 6
             },
             {
-                name: "MEMO",
-                initials: "ME",
+                participantId: "memo",
                 description: "Siempre tiene una versión",
                 votes: 3
             }
@@ -133,26 +205,22 @@ const categories = [
 
         nominees: [
             {
-                name: "RULO",
-                initials: "RU",
+                participantId: "rulo",
                 description: "La suerte nunca lo acompaña",
                 votes: 5
             },
             {
-                name: "PADILLA",
-                initials: "PA",
+                participantId: "padilla",
                 description: "Todo puede salir peor",
                 votes: 8
             },
             {
-                name: "URÍAS",
-                initials: "UR",
+                participantId: "urias",
                 description: "Un imán para el desastre",
                 votes: 6
             },
             {
-                name: "PIQUÉ",
-                initials: "PI",
+                participantId: "pique",
                 description: "La mala suerte hecha persona",
                 votes: 2
             }
@@ -169,26 +237,22 @@ const categories = [
 
         nominees: [
             {
-                name: "MEMO",
-                initials: "ME",
+                participantId: "memo",
                 description: "El jugador más valioso",
                 votes: 10
             },
             {
-                name: "ROBI",
-                initials: "RO",
+                participantId: "robi",
                 description: "Siempre aparece en momentos clave",
                 votes: 7
             },
             {
-                name: "TASUKO",
-                initials: "TA",
+                participantId: "tasuko",
                 description: "Un referente del grupo",
                 votes: 5
             },
             {
-                name: "GAS",
-                initials: "GA",
+                participantId: "gas",
                 description: "El que nunca falla",
                 votes: 8
             }
@@ -205,26 +269,22 @@ const categories = [
 
         nominees: [
             {
-                name: "BRINGAS",
-                initials: "BR",
+                participantId: "bringas",
                 description: "Una trayectoria inolvidable",
                 votes: 6
             },
             {
-                name: "MEMO",
-                initials: "ME",
+                participantId: "memo",
                 description: "Un nombre que hace historia",
                 votes: 9
             },
             {
-                name: "RULO",
-                initials: "RU",
+                participantId: "rulo",
                 description: "Una leyenda viviente",
                 votes: 7
             },
             {
-                name: "ROBI",
-                initials: "RO",
+                participantId: "robi",
                 description: "El legado continúa",
                 votes: 4
             }
@@ -232,7 +292,6 @@ const categories = [
     }
 
 ];
-
 
 /* =========================================
    2. ESTADO DE LA APLICACIÓN
@@ -406,6 +465,7 @@ function updateCategoryInformation() {
    7. CREAR TARJETAS DE NOMINADOS
 ========================================= */
 
+
 function renderNominees() {
 
     const category = getCurrentCategory();
@@ -413,6 +473,10 @@ function renderNominees() {
     nomineesContainer.innerHTML = "";
 
     category.nominees.forEach((nominee, index) => {
+
+        // Obtenemos los datos generales del participante.
+        const participant =
+            participants[nominee.participantId];
 
         const card =
             document.createElement("article");
@@ -435,11 +499,11 @@ function renderNominees() {
             </span>
 
             <div class="nominee-avatar">
-                ${nominee.initials}
+                ${participant.initials}
             </div>
 
             <h3 class="nominee-name">
-                ${nominee.name}
+                ${participant.name}
             </h3>
 
             <p class="nominee-description">
@@ -472,6 +536,7 @@ function renderNominees() {
     });
 
 }
+
 
 
 /* =========================================
@@ -530,7 +595,10 @@ function revealWinner() {
     }
 
     const winner =
-        category.nominees[winningIndex];
+    category.nominees[winningIndex];
+
+const winnerParticipant =
+    participants[winner.participantId];
 
     // Guardamos el resultado de la categoría.
 
@@ -543,7 +611,7 @@ function revealWinner() {
   // Actualizamos la pantalla dorada.
 
 winnerName.textContent =
-    winner.name;
+    winnerParticipant.name;
 
 winnerCategory.textContent =
     category.title;
@@ -556,8 +624,9 @@ winnerVotes.textContent =
 // ACTUALIZAR FOTOGRAFÍA DEL GANADOR
 // -----------------------------------------
 
+
 const photoPath =
-    winnerPhotos[winner.name];
+    winnerParticipant.photo;
 
 if (photoPath) {
 
@@ -566,13 +635,14 @@ if (photoPath) {
     winnerPhoto.src = photoPath;
 
     winnerPhoto.alt =
-        `Fotografía de ${winner.name}`;
+        `Fotografía de ${winnerParticipant.name}`;
 
 } else {
 
     winnerPhotoContainer.style.display = "none";
 
 }
+
 
     const totalVotes =
         category.nominees.reduce(
